@@ -42,6 +42,10 @@ struct ContentView: View {
         return convertFromMeters(meters: inputInMeters, to: expectedOutputLength)
     }
     
+    /**
+           Another way to do this:  https://www.hackingwithswift.com/example-code/system/how-to-convert-units-using-unit-and-measurement
+     */
+    
     func convertFromMeters(meters : Double, to : String) -> Double {
         
         if to == "m" {return meters}
